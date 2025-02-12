@@ -1,4 +1,7 @@
-/** @param {NS} ns */
+/**
+ * Usage in game: 'run s-hack.js <server>'
+ * @param {NS} ns
+ */
 export async function main(ns) {
     const target = ns.args[0]
     const moneyThresh = ns.getServerMaxMoney(target) * .95;
