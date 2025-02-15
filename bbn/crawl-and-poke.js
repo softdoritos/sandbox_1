@@ -53,7 +53,7 @@ async function attempt_to_hack_hosts(ns, graph) {
             if (!ns.fileExists("s-hack.js", hostname)) {
                 await ns.scp("s-hack.js", hostname, "home")
             }
-            if (!ns.fileExists("s-hack.js", hostname)) {
+            if (!ns.fileExists("share.js", hostname)) {
                 await ns.scp("share.js", hostname, "home")
             }
             let share_ram = await ns.getScriptRam("share.js", hostname)
