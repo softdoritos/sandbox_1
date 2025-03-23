@@ -44,7 +44,7 @@ async function attempt_to_hack_hosts(ns, graph) {
                }
            }
         } else {
-            if (hostname.includes("home")) {
+            if (hostname.includes("home") || hostname.includes("hacknet-server")) {
                 continue
             }
             let max_ram = await ns.getServerMaxRam(hostname)
